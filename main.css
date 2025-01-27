@@ -1,0 +1,428 @@
+html, body {
+    font-family: 'IF Kica', normal;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.font-2,
+.font-2 * {
+    font-family: 'Montserrat', sans-serif;
+}
+.bg-b {
+    background-color: black;
+}
+.bg-b h2,
+.bg-b p,
+.bg-b dl {
+    color: white;
+}
+.bg-w{
+    background-color: white;
+}
+.bg-w h2,
+.bg-w p,
+.bg-w dl {
+    color: black;
+}
+.sec {
+    min-height: 100vh;
+    position: relative;
+}
+.section-title {
+    scroll-timeline: --title-progress y;
+    overflow-y: hide;
+    z-index: -1;
+    height: 200vh;
+}
+.site-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+    animation: maintitle-hide auto linear;
+    animation-timeline: scroll(root)
+}
+
+.site-title-container > * {
+    text-align: center;
+    margin: 0;
+}
+
+.site-title {
+    font-weight: 700;
+    font-size: 2.67em;
+}
+
+.site-title2 {
+    font-weight: 100;
+    font-size: 2.67em;
+}
+
+.sec-col2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title-sec1 {
+    font-size: 5rem;
+    line-height: 1.1em;
+    text-align: right;
+    margin: 0;
+}
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.side-sticky {
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+}
+.side-align-end {
+    align-items: flex-end
+}
+.side-align-start {
+    align-items: flex-start
+}
+
+.side h2,
+.side p,
+.side dl {
+    display: block;
+}
+
+.stat-block-wrapper {
+    min-height: 250vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.stat-block-anim1 {
+    animation: statblock1-hide auto linear;
+    animation-timeline: scroll(root)
+}
+.stat-block-anim2 {
+    animation: statblock2-hide auto linear;
+    animation-timeline: scroll(root)
+}
+.stat-block-anim3 {
+    animation: statblock3-hide auto linear;
+    animation-timeline: scroll(root)
+}
+
+.stat-block-anim4 {
+    animation: meblock1-hide auto linear;
+    animation-timeline: scroll(root)
+}
+
+.stat-block-anim5 {
+    animation: meblock2-hide auto linear;
+    animation-timeline: scroll(root)
+}
+
+.stat-block-anim6 {
+    animation: meblock3-hide auto linear;
+    animation-timeline: scroll(root)
+}
+
+.stat-block-anim7 {
+    animation: meblock4-hide auto linear;
+    animation-timeline: scroll(root)
+}
+.stat-block-anim8 {
+    animation: meblock5-hide auto linear;
+    animation-timeline: scroll(root)
+}
+.stat-block-anim10 {
+    animation: howblock2-hide auto linear;
+    animation-timeline: scroll(root)
+}
+.stat-block-anim11 {
+    animation: whyblock1-hide auto linear;
+    animation-timeline: scroll(root)
+}
+.stat-block-anim12 {
+    animation: moralblock1-hide auto linear;
+    animation-timeline: scroll(root)
+}
+.moral-block {
+    position: sticky;
+    top: calc(50% - 4rem);
+    height: 30vh;
+    width: 33vw;
+    margin: 0;
+    font-size: 2.25rem;
+}
+.why-block {
+    position: sticky;
+    top: calc(33% - 4rem);
+    height: 30vh;
+    width: 33vw;
+    margin: 0;
+    font-size: 2.25rem;
+}
+.how-block {
+    position: sticky;
+    top: calc(25% - 4rem);
+    height: 30vh;
+    width: 33vw;
+    margin: 0;
+    font-size: 2.25rem;
+}
+.me-block {
+    position: sticky;
+    top: calc(50% - 4rem);
+    height: 30vh;
+    width: 33vw;
+    margin: 0;
+    font-size: 2.25rem;
+}
+.bold {
+    font-weight: bold;
+}
+.font-big {
+    font-size: 4em;
+}
+.font-mini {
+    font-size: 1.5em;
+}
+.stat-block {
+    position: sticky;
+    top: 20%;
+    height: 30vh;
+    width: 33vw;
+    margin: 0;
+}
+.stat-block dt {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: .25em;
+}
+.stat-block dd {
+    font-size: 2rem;
+    margin: 0;
+}
+.stat-block-long {
+    min-height: 400vh;
+}
+.stat-block-long {
+    
+    align-items: start;
+    padding-top: 50%;
+}
+
+.footer {
+    padding: .5em 1em;
+}
+.footer p {
+    font-size: 0.75em;
+    color: gray;
+    margin: 0;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+@keyframes maintitle-hide {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  1% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  2.5% {
+    opacity: 0;
+    transform: translateY(-3em);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes statblock1-hide {
+    0% {
+        opacity: 1;
+    }
+    7% {
+      opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    61% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
+  @keyframes statblock2-hide {
+    0% {
+        opacity: 1;
+    }
+    14% {
+      opacity: 1;
+    }
+    16% {
+        opacity: 0;
+    }
+    66% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
+  @keyframes statblock3-hide {
+    0% {
+        opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    96% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
+  @keyframes meblock1-hide {
+    0% {
+        opacity: 0;
+    }
+    36.5% {
+      opacity: 0;
+    }
+    37% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  @keyframes meblock2-hide {
+    0% {
+        opacity: 0;
+    }
+    41.5% {
+      opacity: 0;
+    }
+    42% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  @keyframes meblock3-hide {
+    0% {
+        opacity: 0;
+    }
+    47.5% {
+      opacity: 0;
+    }
+    48% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  @keyframes meblock4-hide {
+    0% {
+        opacity: 0;
+    }
+    54% {
+      opacity: 0;
+    }
+    55% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  @keyframes meblock5-hide {
+    0% {
+        opacity: 0;
+    }
+    59% {
+      opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    61% {
+        opacity: 1;
+    }
+    62% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+  @keyframes howblock2-hide {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    78% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+  @keyframes whyblock1-hide {
+    0% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    89% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+  @keyframes moralblock1-hide {
+    0% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
