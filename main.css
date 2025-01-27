@@ -116,6 +116,10 @@ html, body {
     animation: statblock2-hide auto linear;
     animation-timeline: scroll(root)
 }
+.stat-block-anim2-1 {
+    animation: statblock2-1-hide auto linear;
+    animation-timeline: scroll(root)
+}
 .stat-block-anim3 {
     animation: statblock3-hide auto linear;
     animation-timeline: scroll(root)
@@ -290,11 +294,29 @@ html, body {
     }
   }
 
+  @keyframes statblock2-1-hide {
+    0% {
+        opacity: 1;
+    }
+    19% {
+      opacity: 1;
+    }
+    21% {
+        opacity: 0;
+    }
+    66% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
   @keyframes statblock3-hide {
     0% {
         opacity: 1;
     }
-    25% {
+    28% {
       opacity: 1;
     }
     30% {
